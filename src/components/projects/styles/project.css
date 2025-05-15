@@ -77,3 +77,9 @@
 .project-links a:hover {
   transform: scale(1.1);
 }
+
+@media (max-width: 1200px) {
+  .show-more-btn {
+    display: none !important;
+  }
+}

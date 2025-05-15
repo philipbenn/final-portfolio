@@ -5,7 +5,13 @@ import BackToTopWidget from "../widget/backToTopWidget";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import { useEffect } from "react";
 
-function ProjectDetail({ project, onBack }: { project: any; onBack: () => void }) {
+function ProjectDetail({
+  project,
+  onBack,
+}: {
+  project: any;
+  onBack: () => void;
+}) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -27,9 +33,11 @@ function ProjectDetail({ project, onBack }: { project: any; onBack: () => void }
       <main className="project-detail" data-aos="fade-up">
         <h1>{project.title}</h1>
         <div className="tech-stack">
-            {project.technologies.map((tech: string, index: number) => (
-            <span key={index} className="tech-item-project">{tech}</span>
-            ))}
+          {project.technologies.map((tech: string, index: number) => (
+            <span key={index} className="tech-item-project">
+              {tech}
+            </span>
+          ))}
         </div>
         <div className="project-content">
           <div className="description">
@@ -38,10 +46,24 @@ function ProjectDetail({ project, onBack }: { project: any; onBack: () => void }
           {(project.deployLink || project.githubLink) && (
             <div className="links-column">
               {project.deployLink && (
-                <a href={project.deployLink} target="_blank" rel="noreferrer" className="deploy-link">Try Demo</a>
+                <a
+                  href={project.deployLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="deploy-link"
+                >
+                  Try Demo
+                </a>
               )}
               {project.githubLink && (
-                <a href={project.githubLink} target="_blank" rel="noreferrer" className="github-link">View Code</a>
+                <a
+                  href={project.githubLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="github-link"
+                >
+                  View Code
+                </a>
               )}
             </div>
           )}
@@ -49,7 +71,12 @@ function ProjectDetail({ project, onBack }: { project: any; onBack: () => void }
         {project.allImages?.length > 0 && (
           <div className="project-images-detail">
             {project.allImages.map((image: string, index: number) => (
-              <img key={index} src={image} alt="" className="project-image-detail" />
+              <img
+                key={index}
+                src={image}
+                alt=""
+                className="project-image-detail"
+              />
             ))}
           </div>
         )}
@@ -58,6 +85,5 @@ function ProjectDetail({ project, onBack }: { project: any; onBack: () => void }
     </>
   );
 }
-
 
 export default ProjectDetail;
