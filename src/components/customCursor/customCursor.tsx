@@ -2,33 +2,29 @@ import { useEffect, useState } from "react";
 
 export default function CustomCursor() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
-  const [isTouchDevice, setIsTouchDevice] = useState(false);
+  const [showCursor, setShowCursor] = useState(window.innerWidth > 800);
 
   useEffect(() => {
-    const handleTouch = () => setIsTouchDevice(true);
-    const handleMouse = () => setIsTouchDevice(false);
-
-    // Listen to initial device interaction
-    window.addEventListener("touchstart", handleTouch, { once: true });
-    window.addEventListener("mousemove", handleMouse, { once: true });
-
-    return () => {
-      window.removeEventListener("touchstart", handleTouch);
-      window.removeEventListener("mousemove", handleMouse);
+    const handleResize = () => {
+      setShowCursor(window.innerWidth > 800);
     };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   useEffect(() => {
-    if (isTouchDevice) return;
+    if (!showCursor) return;
 
     const move = (e: MouseEvent) => {
       setPosition({ x: e.clientX, y: e.clientY });
     };
+
     window.addEventListener("mousemove", move);
     return () => window.removeEventListener("mousemove", move);
-  }, [isTouchDevice]);
+  }, [showCursor]);
 
-  if (isTouchDevice) return null;
+  if (!showCursor) return null;
 
   return (
     <div
