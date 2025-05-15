@@ -1,0 +1,79 @@
+.project-card {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.project-card.reversed {
+  flex-direction: row-reverse;
+}
+
+.project-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.project-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.project-image img {
+  border-radius: 15px;
+  box-shadow: 0 60px 123px -25px hsla(225, 2%, 62%, 0.42),
+    0 35px 75px -35px hsla(225, 2%, 62%, 0.08);
+  filter: blur(0);
+  opacity: 1;
+  transform: perspective(800px) rotateY(25deg) scale(0.8) rotateX(10deg);
+  transition: all 0.6s ease;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  object-fit: cover;
+}
+
+.project-image img:hover {
+  transform: perspective(800px) rotateY(0deg) scale(1) rotateX(0deg);
+  box-shadow: 0 80px 150px -20px hsla(225, 10%, 50%, 0.5),
+    0 40px 100px -40px hsla(225, 10%, 50%, 0.2);
+}
+
+.project-info {
+  flex: 1;
+  max-width: 600px;
+}
+
+.tech-stack {
+  margin-top: 10px;
+}
+
+.tech-item-project {
+  display: inline-block;
+  color: var(--text-color);
+  background-color: var(--light-blue);
+  padding: 6px 10px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.project-links a {
+  display: inline-block;
+  margin-right: 15px;
+  margin-top: 15px;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+  transition: transform 0.3s ease;
+  gap: 10px;
+}
+
+.project-links a:hover {
+  transform: scale(1.1);
+}

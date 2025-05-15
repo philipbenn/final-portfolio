@@ -1,0 +1,25 @@
+:root {
+  /* ------- theme ------- */
+  --background-color: var(--dark-color);
+  --text-color: var(--white-color);
+  /* --------------------- */
+  /* ------- colors ------- */
+  --primary-color: #3b638a;
+  --secondary-color: #073461;
+  --primary-hover-color: #2f4f6e;
+  --secondary-hover-color: #0b2a4d;
+  --light-blue: #a4c8e1;
+  --highlight-color: #9c5ba5;
+  --highlight-hover-color: #633363;
+  --light-color: #65656d;
+  --dark-color: #15212c;
+  --dark-color-hover: #8b9eb1;
+  --white-color: #f7f7f7;
+  --white-hover-color: #dddddd;
+  --dark-white-color: #aca9a9;
+  /* --------------------- */
+
+  /* ------- fonts ------- */
+  --primary-font: "Poppins", sans-serif;
+  /* --------------------- */
+}

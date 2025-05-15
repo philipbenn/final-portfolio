@@ -1,0 +1,15 @@
+.widget {
+  max-width: 100px;
+  margin: 0 auto;
+}
+
+.widget.hidden {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+@media (max-width: 785px) {
+  .widget {
+    display: none;
+  }
+}

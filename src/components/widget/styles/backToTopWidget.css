@@ -1,0 +1,30 @@
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: var(--highlight-color);
+  color: white;
+  padding: 0.75rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  opacity: 1;
+  visibility: visible;
+  transition: background-color 0.3s ease, opacity 0.3s ease,
+    visibility 0.3s ease;
+  height: 20px;
+}
+
+.back-to-top i {
+  transform: rotate(90deg);
+}
+
+.back-to-top:hover {
+  background-color: var(--highlight-hover-color);
+}
+
+@media (max-width: 1400px) {
+  .back-to-top {
+    display: none;
+  }
+}
