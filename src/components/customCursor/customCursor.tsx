@@ -5,20 +5,29 @@ export default function CustomCursor() {
   const [isTouchDevice, setIsTouchDevice] = useState(false);
 
   useEffect(() => {
-    // Check if it's a touch device
-    const hasTouch = "ontouchstart" in window || navigator.maxTouchPoints > 0;
-    setIsTouchDevice(hasTouch);
+    const handleTouch = () => setIsTouchDevice(true);
+    const handleMouse = () => setIsTouchDevice(false);
 
-    if (!hasTouch) {
-      const move = (e: MouseEvent) => {
-        setPosition({ x: e.clientX, y: e.clientY });
-      };
-      window.addEventListener("mousemove", move);
-      return () => window.removeEventListener("mousemove", move);
-    }
+    // Listen to initial device interaction
+    window.addEventListener("touchstart", handleTouch, { once: true });
+    window.addEventListener("mousemove", handleMouse, { once: true });
+
+    return () => {
+      window.removeEventListener("touchstart", handleTouch);
+      window.removeEventListener("mousemove", handleMouse);
+    };
   }, []);
 
-  // Don't render the custom cursor on touch devices
+  useEffect(() => {
+    if (isTouchDevice) return;
+
+    const move = (e: MouseEvent) => {
+      setPosition({ x: e.clientX, y: e.clientY });
+    };
+    window.addEventListener("mousemove", move);
+    return () => window.removeEventListener("mousemove", move);
+  }, [isTouchDevice]);
+
   if (isTouchDevice) return null;
 
   return (
@@ -45,7 +54,7 @@ export default function CustomCursor() {
           stroke="#3B638A"
           strokeWidth="2"
           d="M5.5 3.21V20.8c0 .45.54.67.85.35l4.86-4.86a.5.5 0 0 1 .35-.15h6.87a.5.5 0 0 0 .35-.85L6.35 2.85a.5.5 0 0 0-.85.35Z"
-        />
+        ></path>
       </svg>
     </div>
   );
