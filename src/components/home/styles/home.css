@@ -11,7 +11,6 @@
     var(--background-color-transparent, rgba(0, 0, 0, 0)) 80%,
     var(--background-color) 100%
   );
-  padding: 0 2rem;
 }
 
 .p5-bg-container {
@@ -61,6 +60,7 @@
   display: flex;
   gap: clamp(1rem, 3vw, 2.5rem);
   justify-content: center;
+  margin-left: 25px;
 }
 
 .socials a svg {
@@ -76,5 +76,9 @@
 @media (max-width: 795px) {
   .hero {
     padding: 0;
+  }
+
+  .socials {
+    margin-left: 0;
   }
 }

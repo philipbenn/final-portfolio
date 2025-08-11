@@ -10,8 +10,13 @@ header {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+header a {
+  cursor: pointer;
+}
+
 .theme-toggle-icon {
   font-size: clamp(20px, 2vw, 28px);
+  cursor: pointer;
   display: flex;
   align-items: center;
   transition: transform 0.3s ease;

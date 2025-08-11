@@ -205,7 +205,7 @@ const info = {
       {
         title: "Jagger",
         subtitle: "Buzzer",
-        duration: "01/09-2022 - Present",
+        duration: "01/09-2022 - 12/08-2025",
         image: "images/jagger.jpg",
         description:
           "Working as a buzzer at Jagger, a restaurant in Copenhagen. Responsibilities included taking orders and serving food.",

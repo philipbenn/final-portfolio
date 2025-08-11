@@ -13,7 +13,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import BackToTopWidget from "./components/widget/backToTopWidget";
-import CustomCursor from "./components/customCursor/customCursor";
 import {
   BrowserRouter as Router,
   Routes,
@@ -82,7 +81,6 @@ function App() {
 
   return (
     <div id="page" className="site">
-      <CustomCursor />
       <Router>
         <Routes>
           <Route path="/" element={<MainContent />} />

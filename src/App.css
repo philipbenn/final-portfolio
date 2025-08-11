@@ -8,19 +8,6 @@ body {
   scroll-behavior: smooth;
   background-color: var(--background-color);
   color: var(--text-color);
-  cursor: none;
-}
-
-* {
-  cursor: none !important;
-}
-
-span,
-svg,
-div,
-path,
-button {
-  cursor: none;
 }
 
 ::selection {
