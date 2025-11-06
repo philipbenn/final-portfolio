@@ -12,7 +12,7 @@ function Navbar() {
 
   const [isDarkMode, setIsDarkMode] = useState(() => {
     const savedTheme = localStorage.getItem("theme");
-    return savedTheme ? savedTheme === "dark" : true;
+    return savedTheme ? savedTheme === "dark" : false;
   });
 
   const isProjectDetailPage = location.pathname.includes("/projects/");

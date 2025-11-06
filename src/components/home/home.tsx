@@ -2,16 +2,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import info from "../../data/user.js";
-import P5Background from "../p5background/p5background";
 import "./styles/home.css";
 
 function Home() {
   return (
     <section className="hero">
-      <div className="p5-bg-container">
-        <P5Background />
-      </div>
-
       <div className="hero-inner">
         <div className="hero-text" data-aos="fade-up">
           <h1>{info.name}</h1>

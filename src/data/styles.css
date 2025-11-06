@@ -17,6 +17,8 @@
   --white-color: #f7f7f7;
   --white-hover-color: #dddddd;
   --dark-white-color: #aca9a9;
+  --socials-color: #cbcbcb;
+  --gradient: linear-gradient(90deg, rgba(59, 99, 138, 1) 0%, rgba(99, 51, 99, 1) 50%, rgba(156, 91, 165, 1) 100%);
   /* --------------------- */
 
   /* ------- fonts ------- */

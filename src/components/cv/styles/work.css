@@ -1,6 +1,7 @@
 .accordion-container {
   width: 100%;
-  max-width: 30vw;
+  max-width: 450px;
+  min-width: 300px;
   flex: 1;
   background-color: var(--secondary-color);
   padding: 20px;
@@ -111,5 +112,6 @@
   .accordion-container-education,
   .accordion-container {
     max-width: 90%;
+    min-width: unset;
   }
 }

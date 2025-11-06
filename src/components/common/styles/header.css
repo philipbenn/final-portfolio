@@ -46,6 +46,12 @@ header.scrolled .theme-toggle-icon:hover {
 header.scrolled {
   background-color: var(--dark-color);
   opacity: 0.8;
+  transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+}
+
+header.scrolled:hover {
+  opacity: 1;
+  transition: opacity 0.3s ease;
 }
 
 header.scrolled span {

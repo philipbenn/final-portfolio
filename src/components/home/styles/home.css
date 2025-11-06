@@ -6,30 +6,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(
-    to bottom,
-    var(--background-color-transparent, rgba(0, 0, 0, 0)) 80%,
-    var(--background-color) 100%
-  );
-}
-
-.p5-bg-container {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-}
-
-.p5-bg-container canvas {
-  width: 100% !important;
-  height: 100% !important;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  pointer-events: none;
-  background: transparent !important;
 }
 
 .hero-inner {
@@ -45,15 +21,24 @@
 
 .hero-text h1 {
   font-size: clamp(2.5rem, 7vw, 5rem);
-  margin-bottom: clamp(0.5rem, 2vw, 1.5rem);
-  margin-top: 0px;
+  margin: 0;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 .hero-text p {
   font-size: clamp(1rem, 2vw, 1.4rem);
-  margin-bottom: clamp(1rem, 3vw, 2rem);
+  margin: 0;
   line-height: 1.6;
   max-width: 700px;
+  background: var(--light-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 .socials {
@@ -61,16 +46,18 @@
   gap: clamp(1rem, 3vw, 2.5rem);
   justify-content: center;
   margin-left: 25px;
+  margin-top: 15px;
 }
 
 .socials a svg {
   font-size: clamp(1.5rem, 4vw, 2.5rem);
-  color: var(--text-color);
-  transition: color 0.3s ease;
+  color: var(--socials-color);
+  transition: all 0.3s ease;
 }
 
 .socials a:hover svg {
-  color: var(--light-color);
+  color: #9c5ba5;
+  filter: brightness(1.1) saturate(1.2);
 }
 
 @media (max-width: 795px) {
