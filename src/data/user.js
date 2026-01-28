@@ -87,6 +87,14 @@ const info = {
         name: ".NET",
         imgSrc: "images/icons/dotnet.png",
       },
+      {
+        name: "Python",
+        imgSrc: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
+      },
+      {
+        name: "ArrangoDB",
+        imgSrc: "images/icons/arrangodb.png",
+      }
     ],
   },
   projects: {
@@ -157,6 +165,21 @@ const info = {
         githubLink: "https://github.com/philipbenn/Adventskalender",
         icon: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/typescript/typescript.png",
       },
+      {
+        title: "Social Media",
+        image: "images/some_landing.png",
+        allImages: [
+          "../images/some_landing.png",
+          "../images/some_admin.png",
+          "../images/some_email.png",
+        ],
+        description: "A social media project created as part of a school assignment to build a platform for user interaction.",
+        longDescription: "A social media project created as part of a school assignment to build a platform for user interaction. The application allows users to create accounts, post updates, and interact with other users through comments and likes. The project also contained verification via email using verification tokens. Developed using Typescript and React for the frontend, and Python with Flask for the backend.",
+        technologies: ["TypeScript", "React", "Python", "MySQL"],
+        githubLink: "https://github.com/philipbenn/web-dev-exam-project",
+        deployLink: "https://philipbenn.github.io/web-dev-exam-project",
+        icon: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png"
+      }
     ],
   },
   cv: {

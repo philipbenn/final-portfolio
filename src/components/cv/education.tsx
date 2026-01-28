@@ -59,7 +59,7 @@ const Education: React.FC = () => {
           className="cv-arrow-lottie"
         />
         <a
-          href="https://drive.google.com/file/d/1Dwhn54xdWVuUI-NfbCWkQr8utZ7fFBHt/view?usp=drive_link"
+          href="https://drive.google.com/file/d/1ukBaVxs6OUpXbXCdLRlFprvXPdOQMU4T/view?usp=drive_link"
           target="_blank"
           rel="noopener noreferrer"
           className="cv-download-button"

@@ -26,18 +26,21 @@
 
 .social-links-contact {
   display: flex;
+  gap: clamp(1rem, 3vw, 2.5rem);
   justify-content: center;
-  gap: 3rem;
-  margin-top: 1rem;
+  margin-left: 25px;
+  margin-top: 15px;
 }
 
 .social-links-contact a {
-  color: var(--text-color);
-  font-size: 1.3rem;
+  font-size: clamp(0.5rem, 4vw, 1.4rem);
+  color: var(--socials-color);
+  transition: all 0.3s ease;
 }
 
 .social-links-contact a:hover {
-  color: var(--light-color);
+  color: #9c5ba5;
+  filter: brightness(1.1) saturate(1.2);
 }
 
 .buttom-contact-container {
