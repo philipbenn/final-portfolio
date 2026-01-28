@@ -14,7 +14,7 @@ const info = {
   name: "Philip Schønning",
   logo: "images/animatedphil.png",
   initials: "PBS",
-  description: "Frontend Developer, Web Developer, UI/UX Designer",
+  description: "Full-Stack Developer | Web Developer | Tech Enthusiast",
   techstack: {
     title: "Tech Stack",
     description: "Here are some of the technologies I have worked with:",
