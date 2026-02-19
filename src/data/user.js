@@ -14,7 +14,7 @@ const info = {
   name: "Philip Schønning",
   logo: "images/animatedphil.png",
   initials: "PBS",
-  description: "Full-Stack Developer | Web Developer | Tech Enthusiast",
+  description: "Software Engineer, Fullstack & App Developer",
   techstack: {
     title: "Tech Stack",
     description: "Here are some of the technologies I have worked with:",
@@ -179,6 +179,20 @@ const info = {
         githubLink: "https://github.com/philipbenn/web-dev-exam-project",
         deployLink: "https://philipbenn.github.io/web-dev-exam-project",
         icon: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png"
+      },
+      {
+        title: "Fitness Tracker App",
+        image: "images/fitnessWeb.png",
+        allImages: [
+          "../images/fitnessAnalytics.png",
+          "../images/fitnessDashboard.png",
+          "../images/fitnessNutrition.png",
+          "../images/fitnessWorkouts.png"
+        ],
+        description: "A fitness tracker app developed as a personal project for me to track my workouts, nutrition, and overall fitness progress.",
+        longDescription: "A fitness tracker app developed as a personal project for me to track my workouts, nutrition, and overall fitness progress. The app allows users to log their workouts, track their nutrition intake, and view analytics on their fitness journey. The nutrition tracking is using a public API to get nutrition information about food.",
+        technologies: ["TypeScript", "React", "Python", "MySQL"],
+        icon: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/typescript/typescript.png",
       }
     ],
   },
@@ -214,7 +228,7 @@ const info = {
         image: "images/fellowmind.jpg",
         description:
           "As a student at Fellowmind, I contribute to the development of the company's intranet product, which is built on SharePoint. My primary focus is on the frontend, where I design and implement user interfaces and develop interactive web parts using TypeScript and SPFx.",
-        techstack: ["TypeScript", "React", "SPFx", "Azure DevOps", "Fluent UI"],
+        techstack: ["TypeScript", "React", "SPFx", "Azure DevOps", "Fluent UI", "C#", ".NET", "CosmosDB"],
       },
       {
         title: "Fellowmind Internship",
