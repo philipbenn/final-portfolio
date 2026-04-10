@@ -24,7 +24,7 @@
   background-color: var(--highlight-hover-color);
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
   .back-to-top {
     display: none;
   }
