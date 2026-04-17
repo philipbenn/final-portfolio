@@ -24,4 +24,11 @@
   /* ------- fonts ------- */
   --primary-font: "Poppins", sans-serif;
   /* --------------------- */
+
+  caret-color: var(--highlight-color);
+}
+
+::selection {
+  background-color: var(--highlight-color);
+  color: var(--white-color);
 }
